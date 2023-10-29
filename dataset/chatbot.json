@@ -1,0 +1,325 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hallo",
+                "p",
+                "hai",
+                "halo",
+                "hei",
+                "hi",
+                "hy",
+                "pagi",
+                "morning",
+                "siang",
+                "afternoon",
+                "sore",
+                "malam",
+                "bro",
+                "sis",
+                "kawan",
+                "selamat pagi",
+                "selamat siang",
+                "selamat malam",
+                "good morning",
+                "good night",
+                "good afternoon",
+                "helo"
+            ],
+            "responses": [
+                "Halo! Selamat datang di StyleBot, asisten fashion Anda. Bagaimana saya bisa membantu?",
+                "Hi! Siap untuk mengeksplor dunia fashion bersama StyleBot?",
+                "Hello! Bagaimana saya dapat membantu Anda dengan kebutuhan fashion Anda hari ini?"
+            ]
+        },
+        {
+            "tag": "tentang aplikasi",
+            "patterns": [
+            "Apa itu Aplikasi StyleBot?",
+            "Apasih StyleBot?",
+            "Apa itu StyleBot?",
+            "Aplikasi apasih StyleBot?",
+            "StyleBot ap sih",
+            "kasih tau soal StyleBot",
+            "saya gatau StyleBot",
+            "jelasin soal StyleBot"
+            ],
+            "responses": [
+            "StyleBot adalah aplikasi berbasis web yang membantu pengguna dalam menemukan dan merekomendasikan produk fashion sesuai dengan selera dan kebutuhan mereka.",
+            "StyleBot merupakan platform yang dirancang untuk menghubungkan pengguna dengan berbagai pilihan fashion terbaru dan tren gaya yang sedang populer.",
+            "Aplikasi ini dirancang untuk membuat pengalaman belanja fashion menjadi lebih mudah, cepat, dan menyenangkan dengan memberikan rekomendasi personal.",
+            "StyleBot menggunakan kecerdasan buatan untuk memahami preferensi gaya pengguna dan menawarkan rekomendasi yang sesuai.",
+            "Aplikasi ini menyediakan galeri produk fashion yang luas, dari pakaian, aksesoris, hingga sepatu, yang disortir berdasarkan tren, merek, dan kategori.",
+            "StyleBot juga memungkinkan pengguna untuk berinteraksi dan mendapatkan inspirasi fashion dari komunitas pengguna lainnya.",
+            "Dengan StyleBot, pengguna dapat menjelajahi, membandingkan, dan membeli produk fashion dari berbagai merek terkemuka dengan mudah dan cepat.",
+            "Aplikasi ini juga menawarkan fitur canggih seperti pencarian visual dan pengenalan gambar untuk membantu pengguna menemukan produk yang mereka inginkan.",
+            "StyleBot bertujuan untuk menjadi asisten pribadi gaya Anda, membantu Anda tetap terupdate dengan tren fashion terbaru dan menemukan penawaran terbaik.",
+            "Platform ini juga menyediakan artikel dan tips fashion, tutorial gaya, dan berbagai fitur menarik lainnya untuk memperkaya pengetahuan dan inspirasi fashion pengguna.",
+            "StyleBot adalah solusi satu atap untuk semua kebutuhan fashion Anda, memudahkan pengguna untuk menemukan dan membeli produk yang tepat."
+            ]
+        },        
+        {
+            "tag": "kaos",
+            "patterns": [
+                "Rekomendasikan kaos untuk saya",
+                "Saya mencari kaos baru",
+                "Kaos apa yang lagi tren?",
+                "rekomendasi kaos"
+            ],
+            "responses": [
+                "Kami merekomendasikan kaos polos dari Brand X, tersedia dalam berbagai warna.",
+                "Kaos bergaris dari Brand Y sangat populer saat ini.",
+                "Kaos grafis dari Brand Z bisa menjadi pilihan yang bagus untuk tampilan kasual."
+            ]
+        },
+        {
+            "tag": "gaun",
+            "patterns": [
+                "Rekomendasikan gaun untuk saya",
+                "Saya mencari gaun untuk acara khusus",
+                "Gaun apa yang lagi tren?",
+                "rekomendasi gaun"
+            ],
+            "responses": [
+                "Gaun panjang berwarna merah dari Brand A sangat elegan untuk acara formal.",
+                "Gaun mini berpotongan A-line dari Brand B sangat cocok untuk acara semi-formal.",
+                "Gaun bermotif bunga dari Brand C bisa menjadi pilihan untuk acara kasual."
+            ]
+        },
+        {
+            "tag": "jaket",
+            "patterns": [
+                "Rekomendasikan jaket untuk saya",
+                "Saya mencari jaket hangat",
+                "Jaket apa yang lagi tren?",
+                "rekomendasi jaket"
+            ],
+            "responses": [
+                "Jaket kulit dari Brand D adalah pilihan klasik yang selalu tren.",
+                "Jaket bomber dari Brand E sangat hangat dan nyaman.",
+                "Jaket denim dari Brand F bisa menjadi pilihan yang bagus untuk tampilan sehari-hari."
+            ]
+        },
+        {
+            "tag": "celana panjang",
+            "patterns": [
+                "Rekomendasikan celana panjang untuk saya",
+                "Saya mencari celana panjang yang nyaman",
+                "Celana panjang apa yang lagi tren?",
+                "rekomendasi celana panjang"
+            ],
+            "responses": [
+                "Celana chino dari Brand G sangat fleksibel dan nyaman.",
+                "Celana jeans skinny dari Brand H adalah pilihan populer saat ini.",
+                "Celana panjang formal dari Brand I sangat cocok untuk acara resmi."
+            ]
+        },
+        {
+            "tag": "baju",
+            "patterns": [
+                "Rekomendasikan baju untuk saya",
+                "Saya mencari baju untuk dipakai bekerja",
+                "Baju apa yang lagi tren?",
+                "rekomendasi baju"
+            ],
+            "responses": [
+                "Kami merekomendasikan baju dari Brand J untuk tampilan profesional.",
+                "Baju dengan motif kotak-kotak dari Brand K sangat tren saat ini.",
+                "Baju lengan panjang dari Brand L bisa menjadi pilihan yang bagus untuk musim dingin."
+            ]
+        },
+        {
+            "tag": "celana pendek",
+            "patterns": [
+                "Rekomendasikan celana pendek untuk saya",
+                "Saya mencari celana pendek untuk olahraga",
+                "Celana pendek apa yang lagi tren?",
+                "rekomendasi celana panjang"
+            ],
+            "responses": [
+                "Celana pendek olahraga dari Brand M sangat nyaman untuk berolahraga.",
+                "Celana pendek denim dari Brand N adalah pilihan yang bagus untuk tampilan kasual.",
+                "Celana pendek kargo dari Brand O menawarkan banyak kantong untuk penyimpanan."
+            ]
+        },
+        {
+            "tag": "rok",
+            "patterns": [
+                "Rekomendasikan rok untuk saya",
+                "Saya mencari rok mini",
+                "Rok apa yang lagi tren?",
+                "rekomendasi rok"
+            ],
+            "responses": [
+                "Rok midi pleated dari Brand P sangat feminin dan elegan.",
+                "Rok mini denim dari Brand Q adalah pilihan yang bagus untuk tampilan kasual.",
+                "Rok panjang dengan motif floral dari Brand R sangat populer musim ini."
+            ]
+        },
+        {
+            "tag": "sweater",
+            "patterns": [
+                "Rekomendasikan sweater untuk saya",
+                "Saya mencari sweater hangat",
+                "Sweater apa yang lagi tren?",
+                "rekomendasi sweater"
+            ],
+            "responses": [
+                "Sweater rajut dari Brand S sangat hangat dan nyaman.",
+                "Sweater hoodie dari Brand T adalah pilihan kasual yang bagus.",
+                "Sweater berpola dari Brand U bisa menambahkan tekstur pada tampilan Anda."
+            ]
+        },
+        {
+            "tag": "jam tangan",
+            "patterns": [
+                "Rekomendasikan jam tangan untuk saya",
+                "Saya mencari jam tangan sport",
+                "Jam tangan apa yang lagi tren?",
+                "rekomendasi jam tangan"
+            ],
+            "responses": [
+                "Jam tangan analog klasik dari Brand V selalu menjadi pilihan yang elegan.",
+                "Jam tangan digital sport dari Brand W sangat fungsional dan modern.",
+                "Jam tangan smartwatch dari Brand X menawarkan berbagai fitur pintar untuk kehidupan sehari-hari Anda."
+            ]
+        },
+        {
+            "tag": "sepatu",
+            "patterns": [
+                "Rekomendasikan sepatu untuk saya",
+                "Saya mencari sepatu olahraga",
+                "Sepatu apa yang lagi tren?",
+                "rekomendasi sepatu"
+            ],
+            "responses": [
+                "Sepatu running dari Brand Y sangat nyaman untuk olahraga.",
+                "Sepatu casual dari Brand Z adalah pilihan yang bagus untuk tampilan sehari-hari.",
+                "Sepatu formal dari Brand AA sangat cocok untuk acara resmi.",
+                "Sepatu boots dari Brand AB bisa menjadi pilihan yang stylish untuk musim dingin."
+            ]
+        },
+        {
+            "tag": "kacamata",
+            "patterns": [
+                "Rekomendasikan kacamata untuk saya",
+                "Saya mencari kacamata hitam",
+                "Kacamata apa yang lagi tren?"
+            ],
+            "responses": [
+                "Kacamata aviator dari Brand X adalah pilihan klasik yang tidak pernah ketinggalan zaman.",
+                "Kacamata cat eye dari Brand Y memberikan tampilan retro yang chic.",
+                "Kacamata bulat dari Brand Z sangat populer di kalangan generasi muda.",
+                "Kacamata persegi dari Brand AA adalah pilihan yang baik untuk tampilan profesional.",
+                "Kacamata hitam dari Brand AB memiliki perlindungan UV yang baik untuk melindungi mata Anda dari sinar matahari."
+            ]
+        },
+        {
+            "tag": "bahasa yang didukung",
+            "patterns": [
+                "dalam bahasa apa aplikasi ini tersedia?",
+                "pekain nyediain bahasa apa",
+                "pekain cuma pake bahasa indo",
+                "pekain bisa pke bahasa asing ga",
+                "gabisa pake bahasa lain yah",
+                "pekain pake bahasa indo atau bukan",
+                "tersedia bahasa apa untuk aplikasi ini?",
+                "apakah aplikasi ini didukung bahasa asing?",
+                "bahasa yang digunakan dalam aplikasi ini apa?",
+                "apakah hanya bahasa indonesia saja?",
+                "selain bahasa indonesia apakah ada bahasa pendukung lainnya?"
+            ],
+            "responses": [
+                "Aplikasi ini hanya mendukung bahasa Indonesia.",
+                "Bahasa yang didukung oleh aplikasi ini adalah bahasa Indonesia.",
+                "Aplikasi ini dirancang khusus untuk mendukung penggunaan bahasa Indonesia.",
+                "Hanya bahasa Indonesia yang dapat digunakan dalam aplikasi ini.",
+                "Dalam aplikasi ini, hanya bahasa Indonesia yang tersedia sebagai pilihan bahasa.",
+                "Jika Anda ingin menggunakan aplikasi ini, Anda perlu menggunakan bahasa Indonesia.",
+                "Aplikasi ini hanya berfungsi dengan bahasa Indonesia.",
+                "Bahasa yang dapat digunakan di aplikasi ini terbatas pada bahasa Indonesia.",
+                "Dalam konteks aplikasi ini, hanya bahasa Indonesia yang bisa digunakan.",
+                "Aplikasi ini didesain untuk penggunaan dalam bahasa Indonesia saja."
+            ]
+        },
+        {
+            "tag": "ketersediaan platform",
+            "patterns": [
+                "Apakah aplikasi ini tersedia di semua platform?",
+                "Platform apa saja yang didukung oleh aplikasi ini?",
+                "Bisakah aplikasi ini dijalankan di Windows?",
+                "Apakah aplikasi ini kompatibel dengan iOS?",
+                "Apakah aplikasi ini tersedia untuk iOS?",
+                "Apakah aplikasi ini hanya bisa dijalankan di Android?",
+                "Di platform mana saja aplikasi ini bisa digunakan?",
+                "Apakah aplikasi ini tersedia di Android?",
+                "Apakah aplikasi ini tersedia di Windows?",
+                "Apakah aplikasi ini kompatibel dengan semua platform?"
+            ],
+            "responses": [
+                "Aplikasi kami tersedia untuk berbagai platform, termasuk Windows, iOS, dan Android."
+            ]
+        },
+        {
+            "tag": "ugly aps",
+            "patterns": [
+                "Aplikasinya tidak bagus.",
+                "Mengapa tampilan aplikasinya jelek?",
+                "Aplikasinya jelek.",
+                "Aplikasinya tidak memuaskan.",
+                "Aplikasinya berkualitas rendah.",
+                "Mengapa aplikasinya tidak bagus?",
+                "Aplikasinya tidak cocok.",
+                "Aplikasinya sangat jelek."
+            ],
+            "responses": [
+                "Kami sangat menyesal jika aplikasi ini tidak memenuhi harapan Anda. Kami selalu berusaha untuk meningkatkan pengalaman pengguna dan menghargai umpan balik Anda.",
+                "Kami minta maaf jika aplikasi ini tidak memenuhi standar kualitas yang Anda harapkan. Kami berkomitmen untuk terus berupaya memberikan pengalaman terbaik kepada pengguna kami.",
+                "Kami minta maaf atas ketidaknyamanan yang Anda alami. Tim kami siap membantu Anda mengatasi segala masalah yang Anda temui.",
+                "Kami minta maaf jika desain atau antarmuka pengguna kami tidak memadai. Kami sedang berusaha untuk meningkatkan aspek-aspek tersebut agar sesuai dengan kebutuhan pengguna.",
+                "Kami minta maaf jika aplikasi kami tidak sesuai dengan kebutuhan Anda. Kami berkomitmen untuk terus mengembangkan fitur dan fungsionalitas aplikasi kami.",
+                "Kami minta maaf jika aplikasi kami tidak berkinerja sesuai harapan Anda. Tim pengembangan kami akan segera meninjau dan memperbaiki masalah teknis yang ada.",
+                "Kami minta maaf atas masalah pada fitur-fitur tertentu. Kami akan segera memperbaiki ini agar semua fitur dapat berfungsi dengan baik.",
+                "Kami menyadari adanya keterbatasan dalam aplikasi kami dan sedang berupaya untuk memperbaikinya. Kami ingin memastikan bahwa aplikasi kami memenuhi kebutuhan pengguna.",
+                "Kami minta maaf atas ketidaknyamanan yang Anda alami. Kami sangat menghargai kesabaran Anda dan bersyukur atas umpan balik yang Anda berikan.",
+                "Kami minta maaf jika aplikasi kami tidak memenuhi harapan Anda. Kami berkomitmen untuk terus mengembangkan dan meningkatkan aplikasi kami agar dapat memberikan pengalaman pengguna yang lebih baik."
+            ]
+        },
+        {
+            "tag": "terimakasih",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Terima kasih",
+                "Makasih",
+                "Terima kasih banyak",
+                "makasih ya",
+                "Dah",
+                "Dadah!",
+                "Bye",
+                "See you",
+                "Good bye",
+                "Selamat tinggal",
+                "Udah dulu ya",
+                "Bye Bye",
+                "sampai jumpa",
+                "arigatou",
+                "by",
+                "sampai jumpa kembali"
+            ],
+            "responses": [
+                "Selamat tinggal! Semoga harimu menyenangkan.",
+                "Terimakasih! Senang bisa membantu Anda.",
+                "Sampai jumpa! Jangan ragu untuk kembali jika ada yang perlu ditanyakan.",
+                "Terimakasih atas kunjungannya! Semoga apa yang Anda cari dapat Anda temukan.",
+                "Selamat tinggal dan terimakasih! Semoga harimu penuh berkah.",
+                "Terimakasih banyak! Kami senang bisa menjadi bagian dari perjalanan Anda.",
+                "Sampai berjumpa lain waktu! Terimakasih atas kepercayaan Anda kepada kami.",
+                "Terimakasih telah menggunakan layanan kami! Selamat beraktivitas.",
+                "Selamat tinggal dan terimakasih sudah memberikan kesempatan kepada kami untuk melayani Anda.",
+                "Terimakasih dan sampai jumpa! Semoga harimu penuh kebahagiaan."
+            ]
+        }
+    ]
+}

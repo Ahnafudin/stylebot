@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleBot</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" >
+</head>
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('path_to_your_background_image');">
+    
+    <!-- Navigation -->
+    <div class="max-w-6xl mx-auto px-4">
+        <nav class="flex justify-between items-center py-6 bg-white">
+            <div class="text-3xl font-semibold text-gray-800">STYLEBOT</div>
+            <div class="space-x-4">
+                <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
+                <a href="/collections" class="text-gray-800 hover:text-gray-600">Collections</a>
+                <a href="/about" class="text-gray-800 hover:text-gray-600">About</a>
+                <a href="/contact" class="text-gray-800 hover:text-gray-600">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Hero Section -->
+    <div class="max-w-6xl mx-auto px-4 py-16 text-center">
+        <h1 class="text-5xl font-bold text-white">Discover Your Style</h1>
+        <p class="text-xl text-gray-200 mt-4">Explore the latest trends and find your perfect style</p>
+        <a href="/shop" class="mt-8 inline-block px-6 py-3 bg-white text-black font-semibold rounded-md">Shop Now</a>
+    </div>
+
+    <!-- Featured Collections -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-gray-800">Featured Collections</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div>
+                <img src="path_to_your_image" alt="Collection" class="w-full h-64 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Summer Collection</h3>
+                <p class="text-gray-600 mt-2">Explore the latest summer trends and styles</p>
+            </div>
+            <div>
+                <img src="path_to_your_image" alt="Collection" class="w-full h-64 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Autumn Collection</h3>
+                <p class="text-gray-600 mt-2">Warm up your wardrobe with our autumn collection</p>
+            </div>
+            <div>
+                <img src="path_to_your_image" alt="Collection" class="w-full h-64 object-cover rounded-md">
+                <h3 class="text-xl font-semibold mt-4">Winter Collection</h3>
+                <p class="text-gray-600 mt-2">Stay stylish and warm with our winter essentials</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="fixed bottom-4 right-4 flex flex-col items-end">
+        <input type="checkbox" id="check" class="hidden"> 
+        <div class="chat-wrapper bg-white p-4 rounded-lg shadow-lg md:w-96 w-80 flex flex-col" style="height: 60vh;" id="scrollable-content">
+            <div class="header flex justify-between items-center p-2 border-b">
+                <div class="font-bold">StyleBot</div>
+                <label for="check" class="close cursor-pointer p-1 bg-gray-200 rounded-full text-gray-600 flex items-center justify-center" style="width: 24px; height: 24px;">X</label>            
+            </div> 
+            <main class="msger-chat p-2 overflow-y-auto flex-grow">
+                <div class="msg left-msg p-2">
+                    <div class="msg-bubble bg-blue-100 rounded-lg p-2">
+                        <div class="msg-info mb-1">
+                            <div class="msg-info-name font-bold">StyleBot</div>
+                            <div class="now text-xs text-gray-500">Sekarang</div>
+                        </div>
+                        <div class="msg-text text-justify">
+                            Hai! Saya Chatbot 😎 Senang bertemu dengan Anda! 👋
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <form class="msger-inputarea flex p-2 w-full">
+                <input type="text" class="msger-input flex-grow p-2 border rounded-l-lg" id="textInput" placeholder="Masukkan pesanmu disini...">
+                <button type="submit" class="msger-send-btn bg-blue-500 text-white p-2 rounded-r-lg">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>                
+            </form>
+        </div>
+        <label for="check" class="chat-btn p-4 bg-blue-500 rounded-full text-white cursor-pointer shadow-lg mb-4 flex items-center justify-center" style="width: 60px; height: 60px;">
+            <i class="far fa-comment text-3xl"></i>
+        </label>      
+    </div>
+
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="flex justify-between">
+                <div>&copy; 2023 StyleBot. All rights reserved.</div>
+                <div class="space-x-4">
+                    <a href="https://github.com/Ahnafudin/" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ahnafudinabdullah5340" target="_blank" class="hover:text-gray-300">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="https://roboflow.com/yourprofile" target="_blank" class="hover:text-gray-300">
+                        <i class="fas fa-registered fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+
+    <!-- JS Chatbot -->
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const chatBtn = document.querySelector('.chat-btn');
+            const chatWrapper = document.querySelector('.chat-wrapper');
+            const closeBtn = document.querySelector('.close');
+            const msgerInput = document.querySelector('.msger-input');
+            const msgerChat = document.querySelector('.msger-chat');
+            const sendBtn = document.querySelector('.msger-send-btn');
+        
+            chatBtn.addEventListener('click', function() {
+                chatWrapper.classList.toggle('open');
+            });
+
+            closeBtn.addEventListener('click', function() {
+                chatWrapper.classList.remove('open');
+            });
+    
+            sendBtn.addEventListener('click', function(event) {
+                event.preventDefault();
+                const message = msgerInput.value;
+                if (!message) return;
+    
+                appendMessage("Kamu", message);
+                msgerInput.value = "";
+                
+                $.post("/get", { msg: message })
+                    .done(function(data) {
+                        appendMessage("StyleBot", data.response);
+                    })
+                    .fail(function() {
+                        appendMessage("StyleBot", "Sorry, I can't respond at the moment.");
+                    });
+            });
+        });
+    
+        function appendMessage(name, message) {
+            const msgHTML = `
+                <div class="msg ${name === "StyleBot" ? "left" : "right"}-msg p-2">
+                    <div class="msg-bubble bg-blue-100 rounded-lg p-2">
+                        <div class="msg-info mb-1">
+                            <div class="msg-info-name font-bold">${name}</div>
+                            <div class="now text-xs text-gray-500">${new Date().toLocaleTimeString()}</div>
+                        </div>
+                        <div class="msg-text text-justify">${message}</div>
+                    </div>
+                </div>
+            `;
+            document.querySelector('.msger-chat').innerHTML += msgHTML;
+            document.querySelector('.msger-chat').scrollTop = document.querySelector('.msger-chat').scrollHeight;
+        }
+    </script>       
+</body>
+</html>
