@@ -1,3 +1,20 @@
+/* NAVBAR SECTION */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+
+/* HERO SECTION */
 .hero-section {
   height: 80vh;
   background-position: center;
@@ -20,7 +37,6 @@
   margin-right: auto;
   margin-left: auto;
 }
-
 
 
 
@@ -160,7 +176,7 @@ canvas {
   font-size: 14px;
 }
 
-/* Chatbot */
+/* CHATBOT */
 .msger-chat {
   transition: all 0.3s ease-in-out;
 }
