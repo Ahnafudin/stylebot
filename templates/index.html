@@ -11,87 +11,64 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" >
 </head>
 <body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('path_to_your_background_image');">
-    
-    <!-- Navigation -->
-    <div class="max-w-6xl mx-auto px-4">
-        <nav class="flex justify-between items-center py-6 bg-white">
-            <div class="text-3xl font-semibold text-gray-800">STYLEBOT</div>
-            <div class="space-x-4">
-                <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
-                <a href="/collections" class="text-gray-800 hover:text-gray-600">Collections</a>
-                <a href="/about" class="text-gray-800 hover:text-gray-600">About</a>
-                <a href="/contact" class="text-gray-800 hover:text-gray-600">Contact</a>
-            </div>
-        </nav>
-    </div>
-
-
-    <!-- Hero Section -->
-    <div class="max-w-6xl mx-auto px-4 py-16 text-center">
-        <h1 class="text-5xl font-bold text-white">Discover Your Style</h1>
-        <p class="text-xl text-gray-200 mt-4">Explore the latest trends and find your perfect style</p>
-        <a href="/shop" class="mt-8 inline-block px-6 py-3 bg-white text-black font-semibold rounded-md">Shop Now</a>
-    </div>
-
-    <!-- Featured Collections -->
-    <div class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-gray-800">Featured Collections</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div>
-                <img src="path_to_your_image" alt="Collection" class="w-full h-64 object-cover rounded-md">
-                <h3 class="text-xl font-semibold mt-4">Summer Collection</h3>
-                <p class="text-gray-600 mt-2">Explore the latest summer trends and styles</p>
-            </div>
-            <div>
-                <img src="path_to_your_image" alt="Collection" class="w-full h-64 object-cover rounded-md">
-                <h3 class="text-xl font-semibold mt-4">Autumn Collection</h3>
-                <p class="text-gray-600 mt-2">Warm up your wardrobe with our autumn collection</p>
-            </div>
-            <div>
-                <img src="path_to_your_image" alt="Collection" class="w-full h-64 object-cover rounded-md">
-                <h3 class="text-xl font-semibold mt-4">Winter Collection</h3>
-                <p class="text-gray-600 mt-2">Stay stylish and warm with our winter essentials</p>
-            </div>
+    <div class="bg-black text-white">
+        <!-- Navbar -->
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex justify-between items-center">
+                <div class="text-3xl font-semibold">STYLEBOT</div>
+                <div class="space-x-4">
+                    <a href="/" class="hover:text-gray-300">Home</a>
+                    <a href="/collections" class="hover:text-gray-300">Collections</a>
+                    <a href="/about" class="hover:text-gray-300">About</a>
+                    <a href="/contact" class="hover:text-gray-300">Contact</a>
+                </div>
+            </nav>
         </div>
-    </div>
 
-    <!-- Chatbot -->
-    <div class="fixed bottom-4 right-4 flex flex-col items-end">
-        <input type="checkbox" id="check" class="hidden"> 
-        <div class="chat-wrapper bg-white p-4 rounded-lg shadow-lg md:w-96 w-80 flex flex-col" style="height: 60vh;" id="scrollable-content">
-            <div class="header flex justify-between items-center p-2 border-b">
-                <div class="font-bold">StyleBot</div>
-                <label for="check" class="close cursor-pointer p-1 bg-gray-200 rounded-full text-gray-600 flex items-center justify-center" style="width: 24px; height: 24px;">X</label>            
-            </div> 
-            <main class="msger-chat p-2 overflow-y-auto flex-grow">
-                <div class="msg left-msg p-2">
-                    <div class="msg-bubble bg-blue-100 rounded-lg p-2">
-                        <div class="msg-info mb-1">
-                            <div class="msg-info-name font-bold">StyleBot</div>
-                            <div class="now text-xs text-gray-500">Sekarang</div>
-                        </div>
-                        <div class="msg-text text-justify">
-                            Hai! Saya Chatbot 😎 Senang bertemu dengan Anda! 👋
-                        </div>
+        <!-- Main Content -->
+        <div class="container mx-auto px-4 py-16">
+            <!-- Hero Section -->
+            <div class="text-center">
+                <h1 class="text-5xl font-bold">Discover Your Style</h1>
+                <p class="text-xl mt-4">Explore the latest trends and find your perfect style with StyleBot</p>
+                <a href="/shop" class="mt-8 inline-block px-6 py-3 bg-white text-black font-semibold rounded-md">Shop Now</a>
+            </div>
+
+            <!-- Camera Detection -->
+            <div class="flex justify-center mt-16">
+                <div>
+                    <h2 class="text-center text-2xl font-bold">Deteksi <span class="text-yellow-500">Fashion</span></h2>
+                    <div class="webcam-container relative mt-4">
+                        <video id="video" autoplay muted playsinline class="rounded hidden"></video>
+                        <div id="fps" class="absolute bottom-2 right-2 bg-white p-1 text-sm rounded"></div>
+                    </div>
+                    <div class="placeholder mt-4" id="camera-placeholder">
+                        <p>Klik "Mulai" untuk memulai deteksi objek..</p>
+                    </div>
+                    <div class="button flex justify-center mt-4">
+                        <button class="btn tombol bg-yellow-400 text-white py-2 px-4 rounded" id="btn-start" type="button">Mulai</button>
                     </div>
                 </div>
-            </main>
-            <form class="msger-inputarea flex p-2 w-full">
-                <input type="text" class="msger-input flex-grow p-2 border rounded-l-lg" id="textInput" placeholder="Masukkan pesanmu disini...">
-                <button type="submit" class="msger-send-btn bg-blue-500 text-white p-2 rounded-r-lg">
-                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                </button>                
-            </form>
-        </div>
-        <label for="check" class="chat-btn p-4 bg-blue-500 rounded-full text-white cursor-pointer shadow-lg mb-4 flex items-center justify-center" style="width: 60px; height: 60px;">
-            <i class="far fa-comment text-3xl"></i>
-        </label>      
-    </div>
+            </div>
 
-    
-    <!-- Footer -->
-    <footer class="bg-black text-white">
-        <div class="max-w-6xl mx-auto px-4 py-6">
+            <!-- Recommendations Section -->
+            <div class="mt-16">
+                <h2 class="text-3xl font-bold text-center">Fashion Recommendations</h2>
+                <div id="recommendations-placeholder" class="placeholder text-center mt-4">Product Recommendations will appear here</div>
+                <div id="recommendations-container" class="recommendations-grid grid grid-cols-1 md:grid-cols-3 gap-8 px-4 py-4 mt-4"></div>
+            </div>
+
+            <!-- Team Members Section -->
+            <div class="mt-16 text-center">
+                <h2 class="text-3xl font-bold">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
+                    <!-- Team members' cards go here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between">
                 <div>&copy; 2023 StyleBot. All rights reserved.</div>
                 <div class="space-x-4">
@@ -107,12 +84,59 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </div>
 
-    <!-- JS Chatbot -->
+    <!-- Chatbot -->
+    <div class="fixed bottom-4 right-4 flex flex-col items-end">
+        <input type="checkbox" id="check" class="hidden"> 
+        <div class="chat-wrapper bg-white p-4 rounded-lg shadow-lg w-80 hidden" id="scrollable-content"> 
+            <div class="header flex justify-between items-center p-2 border-b">
+                <div class="font-bold">StyleBot</div>
+                <label for="check" class="close cursor-pointer p-1 bg-gray-200 rounded-full text-gray-600 flex items-center justify-center" style="width: 24px; height: 24px;">X</label>            
+            </div> 
+            <main class="msger-chat p-2 overflow-y-auto" style="height: 300px;">
+                <div class="msg left-msg p-2">
+                    <div class="msg-bubble bg-blue-100 rounded-lg p-2">
+                        <div class="msg-info mb-1">
+                            <div class="msg-info-name font-bold">STYLEBOT</div>
+                            <div class="now text-xs text-gray-500">Sekarang</div>
+                        </div>
+                        <div class="msg-text text-justify">
+                            Hai! Saya Tuan Chatbot 😎 Senang bertemu dengan Anda! 👋
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <form class="msger-inputarea flex p-2">
+                <input type="text" class="msger-input flex-grow p-2 border rounded-l-lg" id="textInput" placeholder="Masukkan pesanmu disini...">
+                <button type="submit" class="msger-send-btn bg-blue-500 text-white p-2 rounded-r-lg">
+                    <i class="fa fa-paper-plane"></i>
+                </button>                
+            </form>
+        </div>
+        <label for="check" class="chat-btn p-4 bg-blue-500 rounded-full text-white cursor-pointer shadow-lg mb-4 flex items-center justify-center" style="width: 60px; height: 60px;">
+            <i class="fa fa-commenting-o text-3xl"></i>
+        </label>      
+    </div>
+       
+    <!-- JS -->
     <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"></script>
+    <script async src="https://cdn.roboflow.com/0.2.26/roboflow.js"></script>
+    <script async src="https://underscorejs.org/underscore-min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='chatbot.js') }}"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            clearRecommendations();
+            const placeholder = document.getElementById("placeholder");
+            placeholder.style.display = "flex";
+            const cameraPlaceholder = document.getElementById("camera-placeholder");
+            const recommendationsPlaceholder = document.getElementById("recommendations-placeholder");
+            cameraPlaceholder.style.display = "flex";
+            recommendationsPlaceholder.style.display = "none";})
+            
             const chatBtn = document.querySelector('.chat-btn');
             const chatWrapper = document.querySelector('.chat-wrapper');
             const closeBtn = document.querySelector('.close');
@@ -121,31 +145,31 @@
             const sendBtn = document.querySelector('.msger-send-btn');
         
             chatBtn.addEventListener('click', function() {
-                chatWrapper.classList.toggle('open');
+                chatWrapper.classList.toggle('hidden');
+            });
+        
+            closeBtn.addEventListener('click', function() {
+                chatWrapper.classList.add('hidden');
             });
 
-            closeBtn.addEventListener('click', function() {
-                chatWrapper.classList.remove('open');
-            });
-    
             sendBtn.addEventListener('click', function(event) {
                 event.preventDefault();
                 const message = msgerInput.value;
                 if (!message) return;
-    
-                appendMessage("Kamu", message);
+
+                appendMessage("You", message);
                 msgerInput.value = "";
-                
+            
                 $.post("/get", { msg: message })
-                    .done(function(data) {
-                        appendMessage("StyleBot", data.response);
-                    })
-                    .fail(function() {
-                        appendMessage("StyleBot", "Sorry, I can't respond at the moment.");
-                    });
+                .done(function(data) {
+                    appendMessage("StyleBot", data.response);
+                })
+                .fail(function() {
+                    appendMessage("StyleBot", "Sorry, I can't respond at the moment.");
+                });
             });
-        });
-    
+
+
         function appendMessage(name, message) {
             const msgHTML = `
                 <div class="msg ${name === "StyleBot" ? "left" : "right"}-msg p-2">
@@ -161,6 +185,6 @@
             document.querySelector('.msger-chat').innerHTML += msgHTML;
             document.querySelector('.msger-chat').scrollTop = document.querySelector('.msger-chat').scrollHeight;
         }
-    </script>       
+    </script>
 </body>
 </html>
