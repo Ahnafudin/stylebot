@@ -4,40 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StyleBot</title>
+    <title>StyleBot - Fashion AI Indonesia</title>
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" >
 </head>
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('path_to_your_background_image');">
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
     <div class="bg-black text-white">
         <!-- Navbar -->
         <div class="container mx-auto px-4 py-4">
             <nav class="flex justify-between items-center">
-                <div class="text-3xl font-semibold">STYLEBOT</div>
-                <div class="space-x-4">
-                    <a href="/" class="hover:text-gray-300">Home</a>
-                    <a href="/collections" class="hover:text-gray-300">Collections</a>
-                    <a href="/about" class="hover:text-gray-300">About</a>
-                    <a href="/contact" class="hover:text-gray-300">Contact</a>
-                </div>
+              <!-- Logo and Title -->
+              <a href="/" class="flex items-center text-white hover:text-gray-300">
+                <img src="static/img/logo.png" alt="Logo" class="w-10 h-10 mr-2">
+                <span class="text-3xl font-semibold">STYLEBOT</span>
+              </a>
+              
+              <!-- Navigation Links -->
+              <div class="space-x-4">
+                <a href="/" class="hover:text-gray-300">Home</a>
+                <a href="#fitur-section" class="scroll-link hover:text-gray-300">Fitur</a>
+                <a href="#about-section" class="scroll-link hover:text-gray-300">Tentang</a>
+                <a href="#fitur-deteksi" class="scroll-link inline-block px-6 py-3 bg-white text-black font-semibold rounded-md">Deteksi</a>
+              </div>
             </nav>
         </div>
 
         <!-- Main Content -->
         <div class="container mx-auto px-4 py-16">
             <!-- Hero Section -->
-            <div class="text-center">
-                <h1 class="text-5xl font-bold">Discover Your Style</h1>
-                <p class="text-xl mt-4">Explore the latest trends and find your perfect style with StyleBot</p>
-                <a href="/shop" class="mt-8 inline-block px-6 py-3 bg-white text-black font-semibold rounded-md">Shop Now</a>
+            <div class="hero-section relative text-center bg-cover bg-center" style="background-image: url('static/img/hero.jpeg');">
+                <div class="overlay bg-black bg-opacity-50 h-full">
+                    <div class="container mx-auto px-4 h-full flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h1 class="text-6xl font-bold">Temukan Gaya Anda</h1>
+                            <p class="text-2xl mt-4">Jelajahi tren terkini dan temukan gaya sempurna Anda dengan StyleBot</p>
+                            <a href="#fitur-section" class="scroll-link mt-8 inline-block px-6 py-3 bg-white text-black font-semibold rounded-md">Coba Sekarang!!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div id="fitur-section" class="features-section bg-black text-white py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold text-center mb-12">Fitur <span class="text-yellow-500">Fashion</span></h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">
+                        
+                        <!-- Fashion Object Detection Feature -->
+                        <div class="feature-card transition-transform transform hover:scale-105 p-6 bg-white text-black rounded-lg shadow-xl flex flex-col justify-center">
+                            <div class="flex items-center justify-center">
+                                <i class="fas fa-camera text-6xl text-yellow-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold mt-4 text-center">Mode Deteksi Objek</h3>
+                            <p class="mt-4 text-gray-600 text-justify">Rasakan masa depan berbelanja dengan fitur Deteksi Objek Mode kami yang canggih. Manfaatkan teknologi pendeteksi objek yang canggih untuk langsung mengidentifikasi berbagai item fashion secara real-time menggunakan kamera Anda.</p>
+                            <a href="#fitur-deteksi" class="scroll-link mt-6 inline-block bg-yellow-500 text-white py-2 px-6 rounded-md text-center">Coba sekarang</a>
+                        </div>
+                        
+                        <!-- Chatbot Feature -->
+                        <div class="feature-card transition-transform transform hover:scale-105 p-6 bg-white text-black rounded-lg shadow-xl flex flex-col justify-center">
+                            <div class="flex items-center justify-center">
+                                <i class="fas fa-comment-dots text-6xl text-blue-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold mt-4 text-center">Bantuan Chatbot</h3>
+                            <p class="mt-4 text-gray-600 text-justify">Terlibat dengan Chatbot cerdas kami untuk saran mode yang dipersonalisasi dan jawaban atas semua pertanyaan Anda. Temukan cara baru berbelanja dengan respons instan dan rekomendasi yang dipersonalisasi.</p>
+                            <button class="chat-btn mt-6 bg-blue-500 text-white py-2 px-6 rounded-md">Coba sekarang</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Camera Detection -->
-            <div class="flex justify-center mt-16">
+            <div id="fitur-deteksi"class="flex justify-center mt-16">
                 <div>
-                    <h2 class="text-center text-2xl font-bold">Deteksi <span class="text-yellow-500">Fashion</span></h2>
+                    <h2 class="text-center text-3xl font-bold">Deteksi <span class="text-yellow-500">Fashion</span></h2>
                     <div class="webcam-container relative mt-4">
                         <video id="video" autoplay muted playsinline class="rounded hidden"></video>
                         <div id="fps" class="absolute bottom-2 right-2 bg-white p-1 text-sm rounded"></div>
@@ -52,17 +94,66 @@
             </div>
 
             <!-- Recommendations Section -->
-            <div class="mt-16">
-                <h2 class="text-3xl font-bold text-center">Fashion Recommendations</h2>
-                <div id="recommendations-placeholder" class="placeholder text-center mt-4">Product Recommendations will appear here</div>
+            <div class="mt-16 text-center">
+                <h2 class="text-3xl font-bold text-center">Rekomendasi <span class="text-yellow-500">Fashion</h2>
+                <div id="recommendations-placeholder" class="placeholder text-center mt-4">Rekomendasi produk akan muncul di sini</div>
                 <div id="recommendations-container" class="recommendations-grid grid grid-cols-1 md:grid-cols-3 gap-8 px-4 py-4 mt-4"></div>
+            </div>
+
+            <!-- About Section -->
+            <div id="about-section" class="bg-black text-white py-16">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-3xl font-bold mb-12">About <span class="text-yellow-500">Us</h2>
+                    <div class="grid place-items-center">
+                        <!-- About Image -->
+                        <div class="about-image mb-6">
+                            <img src="static/img/logo.png" alt="About Us" class="rounded-lg shadow-xl w-48 h-48 object-cover">
+                        </div>
+                        <!-- About Text -->
+                        <div class="about-text text-xl">
+                            <p class="mb-6">StyleBot berada di garis depan dalam merevolusi pengalaman belanja fashion, mengintegrasikan teknologi pembelajaran mesin untuk memberikan rekomendasi produk dan saran gaya yang canggih.</p>
+                            <p class="mb-6">Platform kami memanfaatkan kekuatan algoritma pendeteksian objek yang canggih, memungkinkan pengguna kamera secara real-time untuk mengidentifikasi item fashion. StyleBot menganalisis objek dan menyajikan rekomendasi produk pilihan, lengkap dengan gambar, nama, dan link untuk membeli.</p>
+                            <p class="mb-6">Selain deteksi objek, StyleBot menawarkan bantuan chatbot, memandu pengguna tentang cara memaksimalkan pengalaman berbelanja, memberikan informasi produk, dan menjawab pertanyaan secara instan.</p>
+                            <p>Baik Anda sedang mencari inspirasi gaya, saran belanja, atau informasi produk, StyleBot siap membantu Anda, menjadikan perjalanan fashion Anda lancar dan menyenangkan. Jelajahi, temukan, dan belanja dengan percaya diri dengan StyleBot.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Team Members Section -->
             <div class="mt-16 text-center">
-                <h2 class="text-3xl font-bold">Meet Our Team</h2>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
-                    <!-- Team members' cards go here -->
+                <h2 class="text-3xl font-bold">Tim <span class="text-yellow-500">Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 mx-auto">
+                    <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
+                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin Abdullah" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
+                        <p>Universitas Dian Nuswantoro</p>
+                    </div>
+                    <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
+                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
+                        <p>Universitas Dian Nuswantoro</p>
+                    </div>
+                    <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
+                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
+                        <p>Universitas Dian Nuswantoro</p>
+                    </div>
+                    <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
+                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
+                        <p>Universitas Dian Nuswantoro</p>
+                    </div>
+                    <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
+                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
+                        <p>Universitas Dian Nuswantoro</p>
+                    </div>
+                    <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
+                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
+                        <p>Universitas Dian Nuswantoro</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,7 +179,6 @@
 
     <!-- Chatbot -->
     <div class="fixed bottom-4 right-4 flex flex-col items-end">
-        <input type="checkbox" id="check" class="hidden"> 
         <div class="chat-wrapper bg-white p-4 rounded-lg shadow-lg w-80 hidden" id="scrollable-content"> 
             <div class="header flex justify-between items-center p-2 border-b">
                 <div class="font-bold">StyleBot</div>
@@ -102,7 +192,7 @@
                             <div class="now text-xs text-gray-500">Sekarang</div>
                         </div>
                         <div class="msg-text text-justify">
-                            Hai! Saya Tuan Chatbot 😎 Senang bertemu dengan Anda! 👋
+                            Hai! Saya Chatbot 😎 Senang bertemu dengan Anda! 👋
                         </div>
                     </div>
                 </div>
@@ -114,9 +204,9 @@
                 </button>                
             </form>
         </div>
-        <label for="check" class="chat-btn p-4 bg-blue-500 rounded-full text-white cursor-pointer shadow-lg mb-4 flex items-center justify-center" style="width: 60px; height: 60px;">
-            <i class="fa fa-commenting-o text-3xl"></i>
-        </label>      
+        <label class="chat-btn p-4 bg-blue-500 rounded-full text-white cursor-pointer shadow-lg mb-4 flex items-center justify-center" style="width: 60px; height: 60px;">
+            <i class="far fa-comment-dots text-3xl"></i>
+        </label>        
     </div>
        
     <!-- JS -->
@@ -125,66 +215,30 @@
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"></script>
     <script async src="https://cdn.roboflow.com/0.2.26/roboflow.js"></script>
     <script async src="https://underscorejs.org/underscore-min.js"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='chatbot.js') }}"></script>
+    <script src="static/main.js" defer></script>
+    <script src="static/chatbot.js" defer></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            clearRecommendations();
             const placeholder = document.getElementById("placeholder");
             placeholder.style.display = "flex";
             const cameraPlaceholder = document.getElementById("camera-placeholder");
             const recommendationsPlaceholder = document.getElementById("recommendations-placeholder");
             cameraPlaceholder.style.display = "flex";
-            recommendationsPlaceholder.style.display = "none";})
-            
-            const chatBtn = document.querySelector('.chat-btn');
-            const chatWrapper = document.querySelector('.chat-wrapper');
-            const closeBtn = document.querySelector('.close');
-            const msgerInput = document.querySelector('.msger-input');
-            const msgerChat = document.querySelector('.msger-chat');
-            const sendBtn = document.querySelector('.msger-send-btn');
-        
-            chatBtn.addEventListener('click', function() {
-                chatWrapper.classList.toggle('hidden');
-            });
-        
-            closeBtn.addEventListener('click', function() {
-                chatWrapper.classList.add('hidden');
-            });
-
-            sendBtn.addEventListener('click', function(event) {
-                event.preventDefault();
-                const message = msgerInput.value;
-                if (!message) return;
-
-                appendMessage("You", message);
-                msgerInput.value = "";
-            
-                $.post("/get", { msg: message })
-                .done(function(data) {
-                    appendMessage("StyleBot", data.response);
-                })
-                .fail(function() {
-                    appendMessage("StyleBot", "Sorry, I can't respond at the moment.");
-                });
-            });
-
-
-        function appendMessage(name, message) {
-            const msgHTML = `
-                <div class="msg ${name === "StyleBot" ? "left" : "right"}-msg p-2">
-                    <div class="msg-bubble bg-blue-100 rounded-lg p-2">
-                        <div class="msg-info mb-1">
-                            <div class="msg-info-name font-bold">${name}</div>
-                            <div class="now text-xs text-gray-500">${new Date().toLocaleTimeString()}</div>
-                        </div>
-                        <div class="msg-text text-justify">${message}</div>
-                    </div>
-                </div>
-            `;
-            document.querySelector('.msger-chat').innerHTML += msgHTML;
-            document.querySelector('.msger-chat').scrollTop = document.querySelector('.msger-chat').scrollHeight;
-        }
+            recommendationsPlaceholder.style.display = "none";
+        })
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+        
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+              });
+            });
+          });
+        });
+    </script>        
 </body>
 </html>

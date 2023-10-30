@@ -48,7 +48,17 @@ class ChatBot:
         vector = self.vectorize_text(text)
         output = self.model.predict(vector)
         response_tag = self.le.inverse_transform([output.argmax()])[0]
-        return random.choice(self.responses[response_tag])
+        response = random.choice(self.responses[response_tag])
+        
+        if isinstance(response, dict):
+            return response['text'], response.get('links', [])
+        else:
+            return response, []
+
 
     def generate_response(self, text):
-        return self.predict(text)
+        response_text, links = self.predict(text)
+        if links:
+            return f"{response_text} Link: {links[0]}"
+        else:
+            return response_text

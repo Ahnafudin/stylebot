@@ -28,202 +28,280 @@
                 "helo"
             ],
             "responses": [
-                "Halo! Selamat datang di StyleBot, asisten fashion Anda. Bagaimana saya bisa membantu?",
-                "Hi! Siap untuk mengeksplor dunia fashion bersama StyleBot?",
+                "Halo! Selamat datang di stylebot, asisten fashion Anda. Bagaimana saya bisa membantu?",
+                "Hi! Siap untuk mengeksplor dunia fashion bersama stylebot?",
                 "Hello! Bagaimana saya dapat membantu Anda dengan kebutuhan fashion Anda hari ini?"
             ]
         },
         {
             "tag": "tentang aplikasi",
             "patterns": [
-            "Apa itu Aplikasi StyleBot?",
-            "Apasih StyleBot?",
-            "Apa itu StyleBot?",
-            "Aplikasi apasih StyleBot?",
-            "StyleBot ap sih",
-            "kasih tau soal StyleBot",
-            "saya gatau StyleBot",
-            "jelasin soal StyleBot"
+            "apa itu aplikasi stylebot?",
+            "apasih stylebot?",
+            "apa itu stylebot?",
+            "aplikasi apasih stylebot?",
+            "stylebot ap sih",
+            "kasih tau soal stylebot",
+            "saya gatau stylebot",
+            "jelasin soal stylebot",
+            "stylebot"
             ],
             "responses": [
-            "StyleBot adalah aplikasi berbasis web yang membantu pengguna dalam menemukan dan merekomendasikan produk fashion sesuai dengan selera dan kebutuhan mereka.",
-            "StyleBot merupakan platform yang dirancang untuk menghubungkan pengguna dengan berbagai pilihan fashion terbaru dan tren gaya yang sedang populer.",
-            "Aplikasi ini dirancang untuk membuat pengalaman belanja fashion menjadi lebih mudah, cepat, dan menyenangkan dengan memberikan rekomendasi personal.",
-            "StyleBot menggunakan kecerdasan buatan untuk memahami preferensi gaya pengguna dan menawarkan rekomendasi yang sesuai.",
-            "Aplikasi ini menyediakan galeri produk fashion yang luas, dari pakaian, aksesoris, hingga sepatu, yang disortir berdasarkan tren, merek, dan kategori.",
-            "StyleBot juga memungkinkan pengguna untuk berinteraksi dan mendapatkan inspirasi fashion dari komunitas pengguna lainnya.",
-            "Dengan StyleBot, pengguna dapat menjelajahi, membandingkan, dan membeli produk fashion dari berbagai merek terkemuka dengan mudah dan cepat.",
-            "Aplikasi ini juga menawarkan fitur canggih seperti pencarian visual dan pengenalan gambar untuk membantu pengguna menemukan produk yang mereka inginkan.",
-            "StyleBot bertujuan untuk menjadi asisten pribadi gaya Anda, membantu Anda tetap terupdate dengan tren fashion terbaru dan menemukan penawaran terbaik.",
+            "stylebot adalah aplikasi berbasis web yang membantu pengguna dalam menemukan dan merekomendasikan produk fashion sesuai dengan selera dan kebutuhan mereka.",
+            "stylebot merupakan platform yang dirancang untuk menghubungkan pengguna dengan berbagai pilihan fashion terbaru dan tren gaya yang sedang populer.",
+            "aplikasi ini dirancang untuk membuat pengalaman belanja fashion menjadi lebih mudah, cepat, dan menyenangkan dengan memberikan rekomendasi personal.",
+            "stylebot menggunakan kecerdasan buatan untuk memahami preferensi gaya pengguna dan menawarkan rekomendasi yang sesuai.",
+            "aplikasi ini menyediakan galeri produk fashion yang luas, dari pakaian, aksesoris, hingga sepatu, yang disortir berdasarkan tren, merek, dan kategori.",
+            "stylebot juga memungkinkan pengguna untuk berinteraksi dan mendapatkan inspirasi fashion dari komunitas pengguna lainnya.",
+            "Dengan stylebot, pengguna dapat menjelajahi, membandingkan, dan membeli produk fashion dari berbagai merek terkemuka dengan mudah dan cepat.",
+            "aplikasi ini juga menawarkan fitur canggih seperti pencarian visual dan pengenalan gambar untuk membantu pengguna menemukan produk yang mereka inginkan.",
+            "stylebot bertujuan untuk menjadi asisten pribadi gaya Anda, membantu Anda tetap terupdate dengan tren fashion terbaru dan menemukan penawaran terbaik.",
             "Platform ini juga menyediakan artikel dan tips fashion, tutorial gaya, dan berbagai fitur menarik lainnya untuk memperkaya pengetahuan dan inspirasi fashion pengguna.",
-            "StyleBot adalah solusi satu atap untuk semua kebutuhan fashion Anda, memudahkan pengguna untuk menemukan dan membeli produk yang tepat."
+            "stylebot adalah solusi satu atap untuk semua kebutuhan fashion Anda, memudahkan pengguna untuk menemukan dan membeli produk yang tepat."
             ]
         },        
         {
             "tag": "kaos",
             "patterns": [
                 "Rekomendasikan kaos untuk saya",
-                "Saya mencari kaos baru",
+                "saya mencari kaos baru",
                 "Kaos apa yang lagi tren?",
                 "rekomendasi kaos"
             ],
             "responses": [
-                "Kami merekomendasikan kaos polos dari Brand X, tersedia dalam berbagai warna.",
-                "Kaos bergaris dari Brand Y sangat populer saat ini.",
-                "Kaos grafis dari Brand Z bisa menjadi pilihan yang bagus untuk tampilan kasual."
+                {
+                    "text": "Kaos Pria Distro Lengan Pendek Kayser Time Baju T-Shirt Keren",
+                    "links": ["https://shopee.co.id/Kaos-Pria-Distro-Lengan-Pendek-Kayser-Time-Baju-T-Shirt-Keren-i.165302565.21220875391"]
+                  },
+                  {
+                    "text": "KAOS PRIA DISTRO / KAOS DISTRO COWOK / NATIVE8 - STAY CHILL RESPECT THE LOCALS",
+                    "links": ["https://shopee.co.id/KAOS-PRIA-DISTRO-KAOS-DISTRO-COWOK-NATIVE8-STAY-CHILL-RESPECT-THE-LOCALS-i.367605109.12633021165"]
+                  },
+                  {
+                    "text": "The Monseur Gallery T-shirt Oversize A RABBIT.FM | Kaos Wanita Cream",
+                    "links": ["https://shopee.co.id/The-Monseur-Gallery-T-shirt-Oversize-A-RABBIT.FM-Kaos-Wanita-Cream-i.836627177.23749572743"]
+                }
+            ]
+        },
+        {
+            "tag": "baju",
+            "patterns": [
+              "saya butuh baju baru",
+              "Rekomendasikan baju yang bagus",
+              "Ada rekomendasi baju terbaru?",
+              "Baju apa yang sedang tren?",
+              "rekomendasi baju"
+            ],
+            "responses": [
+              {
+                "text": "Baju Atasan Kemeja Linen Rami // Ramona Crop Linen",
+                "links": ["https://shopee.co.id/Baju-Atasan-Kemeja-Linen-Rami-Ramona-Crop-Linen-i.79120906.12248312779"]
+              },
+              {
+                "text": "GSC - Baju Kaos Oversize SHADOWS / Kaos Oversize Wanita Terbaru",
+                "links": ["https://shopee.co.id/GSC-Baju-Kaos-Oversize-SHADOWS-Kaos-Oversize-Wanita-Terbaru-i.15313645.22807969691"]
+              },
+              {
+                "text": "Baju Kaos Rohani Kristen Katolik Salib Keluarga Wanita Dewasa Jumbo Couple Lengan Pendek",
+                "links": ["https://shopee.co.id/Baju-Kaos-Rohani-Kristen-Katolik-Salib-Keluarga-Wanita-Dewasa-Jumbo-Couple-Lengan-Pendek-i.76785797.17369292493"]
+              }
             ]
         },
         {
             "tag": "gaun",
             "patterns": [
-                "Rekomendasikan gaun untuk saya",
-                "Saya mencari gaun untuk acara khusus",
-                "Gaun apa yang lagi tren?",
-                "rekomendasi gaun"
+              "saya ingin membeli gaun baru",
+              "Ada rekomendasi gaun yang bagus?",
+              "Gaun apa yang sedang tren?",
+              "rekomendasi gaun"
             ],
             "responses": [
-                "Gaun panjang berwarna merah dari Brand A sangat elegan untuk acara formal.",
-                "Gaun mini berpotongan A-line dari Brand B sangat cocok untuk acara semi-formal.",
-                "Gaun bermotif bunga dari Brand C bisa menjadi pilihan untuk acara kasual."
+              {
+                "text": "LBD Little Black Dress Retro Style with Lace Premium",
+                "links": ["https://shopee.co.id/-Retro-Series-LBD-Little-Black-Dress-Retro-Style-with-Lace-Premium-(-Gaun-Hitam-Wanita-Detail-Tali-Ikat-Belakang-)-i.23015438.13594478870"]
+              },
+              {
+                "text": "DRESS GRICIA KIVORINA CARDI 2IN1 / GAUN KASUAL / DRESS TERBARU GARACIA READY 3UKURAN",
+                "links": ["https://shopee.co.id/DRESS-GRICIA-KIVORINA-CARDI-2IN1-GAUN-KASUAL-DRESS-TERBARU-GARACIA-READY-3UKURAN-NEW-DRESS-DRESS-NATAL-COD-BAYAR-DI-TEMPAT-BUSANA-WANITA-i.28413720.19550707902"]
+              },
+              {
+                "text": "Premium Ribbon Tied Dress TH 382 COTTON Gaun Panjang Wanita Tali Simple Bahan Katun",
+                "links": ["https://shopee.co.id/Premium-Ribbon-Tied-Dress-TH-382-COTTON-Gaun-Panjang-Wanita-Tali-Simple-Bahan-Katun-i.43227752.12065223536"]
+              }
             ]
         },
         {
             "tag": "jaket",
             "patterns": [
                 "Rekomendasikan jaket untuk saya",
-                "Saya mencari jaket hangat",
+                "saya mencari jaket hangat",
                 "Jaket apa yang lagi tren?",
                 "rekomendasi jaket"
             ],
             "responses": [
-                "Jaket kulit dari Brand D adalah pilihan klasik yang selalu tren.",
-                "Jaket bomber dari Brand E sangat hangat dan nyaman.",
-                "Jaket denim dari Brand F bisa menjadi pilihan yang bagus untuk tampilan sehari-hari."
+                {
+                    "text": "Vallina - A Chook Baseball Varsity Premium Outerwear Jaket Base Ball Unisex Korean Style Remaja Wanita Pria",
+                    "links": ["https://shopee.co.id/Vallina-A-Chook-Baseball-Varsity-Premium-Outerwear-Jaket-Base-Ball-Unisex-Korean-Style-Remaja-Wanita-Pria-i.344625575.16312242068"]
+                },
+                {
+                    "text": "Jaket Varsity Baseball Full Bordir Pria Wanita Dewasa dan Anak-anak",
+                    "links": ["https://shopee.co.id/Jaket-Varsity-Baseball-Full-Bordir-Pria-Wanita-Dewasa-dan-Anak-anak-i.437272961.14663626486"]
+                },
+                {
+                    "text": "Jeju Jaket Oversize Atasan Korean Style Unisex American Drill Premium",
+                    "links": ["https://shopee.co.id/Jeju-Jaket-Oversize-Atasan-Korean-Style-Unisex-American-Drill-Premium-i.157700196.8912492539"]
+                }
             ]
         },
         {
             "tag": "celana panjang",
             "patterns": [
                 "Rekomendasikan celana panjang untuk saya",
-                "Saya mencari celana panjang yang nyaman",
+                "saya mencari celana panjang yang nyaman",
                 "Celana panjang apa yang lagi tren?",
-                "rekomendasi celana panjang"
+                "rekomendasi celana panjang",
+                "rekomendasi celana"
             ],
             "responses": [
-                "Celana chino dari Brand G sangat fleksibel dan nyaman.",
-                "Celana jeans skinny dari Brand H adalah pilihan populer saat ini.",
-                "Celana panjang formal dari Brand I sangat cocok untuk acara resmi."
-            ]
-        },
-        {
-            "tag": "baju",
-            "patterns": [
-                "Rekomendasikan baju untuk saya",
-                "Saya mencari baju untuk dipakai bekerja",
-                "Baju apa yang lagi tren?",
-                "rekomendasi baju"
-            ],
-            "responses": [
-                "Kami merekomendasikan baju dari Brand J untuk tampilan profesional.",
-                "Baju dengan motif kotak-kotak dari Brand K sangat tren saat ini.",
-                "Baju lengan panjang dari Brand L bisa menjadi pilihan yang bagus untuk musim dingin."
+                {
+                    "text": "TGL Joger Twice Pants Celana Wanita Korean Style Fleece",
+                    "links": ["https://shopee.co.id/TGL-Joger-Twice-Pants-Celana-Wanita-Korean-Style-Fleece-i.157700196.20882497742"]
+                },
+                {
+                    "text": "SIVALI Bonnie Cargo Pants - Highwaist Loose Cargo - Celana Kargo Wanita - Baggy Pants",
+                    "links": ["https://shopee.co.id/SIVALI-Bonnie-Cargo-Pants-Highwaist-Loose-Cargo-Celana-Kargo-Wanita-Baggy-Pants-i.332848392.15295082709"]
+                },
+                {
+                    "text": "Cargo Panjang Pria Korean style Regular Straight Loose Fit",
+                    "links": ["https://shopee.co.id/Celana-Cargo-Panjang-Pria-Korean-style-Regular-Straight-Loose-Fit-Celana-Olahraga-Cargo-Pants-celana-Training-Pria-Sport-Trackpants-Celana-jogger-pria-Celana-kasual-lurus-longgar-merek-trendi-musim-semi-dan-musim-gugur-modis-dan-sederhana-i.1064680403.22353677022"]
+                }
             ]
         },
         {
             "tag": "celana pendek",
             "patterns": [
                 "Rekomendasikan celana pendek untuk saya",
-                "Saya mencari celana pendek untuk olahraga",
+                "saya mencari celana pendek untuk olahraga",
                 "Celana pendek apa yang lagi tren?",
-                "rekomendasi celana panjang"
+                "rekomendasi celana panjang",
+                "rekomendasi celana pendek"
             ],
             "responses": [
-                "Celana pendek olahraga dari Brand M sangat nyaman untuk berolahraga.",
-                "Celana pendek denim dari Brand N adalah pilihan yang bagus untuk tampilan kasual.",
-                "Celana pendek kargo dari Brand O menawarkan banyak kantong untuk penyimpanan."
+                {
+                    "text": "VNOISE - Celana Pendek Pria Distro Boardshort Pantai Shortpants Premium Quality",
+                    "links": ["https://shopee.co.id/VNOISE-Celana-Pendek-Pria-Distro-Boardshort-Pantai-Shortpants-Premium-Quality-i.804116510.21191529538"]
+                },
+                {
+                    "text": "Celana Pendek Pria Broadshort Premium Harian Santai",
+                    "links": ["https://shopee.co.id/Celana-Pendek-Pria-Broadshort-Premium-Harian-Santai-i.710441846.22573293395"]
+                },
+                {
+                    "text": "Surfinclo Celana Pendek Cargo Fleece Bahan Lembut Adem",
+                    "links": ["https://shopee.co.id/Surfinclo-Celana-Pendek-Cargo-Fleece-Bahan-Lembut-Adem-i.112358100.21520622223"]
+                }
             ]
         },
         {
             "tag": "rok",
             "patterns": [
                 "Rekomendasikan rok untuk saya",
-                "Saya mencari rok mini",
+                "saya mencari rok mini",
                 "Rok apa yang lagi tren?",
                 "rekomendasi rok"
             ],
             "responses": [
-                "Rok midi pleated dari Brand P sangat feminin dan elegan.",
-                "Rok mini denim dari Brand Q adalah pilihan yang bagus untuk tampilan kasual.",
-                "Rok panjang dengan motif floral dari Brand R sangat populer musim ini."
-            ]
-        },
-        {
-            "tag": "sweater",
-            "patterns": [
-                "Rekomendasikan sweater untuk saya",
-                "Saya mencari sweater hangat",
-                "Sweater apa yang lagi tren?",
-                "rekomendasi sweater"
-            ],
-            "responses": [
-                "Sweater rajut dari Brand S sangat hangat dan nyaman.",
-                "Sweater hoodie dari Brand T adalah pilihan kasual yang bagus.",
-                "Sweater berpola dari Brand U bisa menambahkan tekstur pada tampilan Anda."
-            ]
-        },
-        {
-            "tag": "jam tangan",
-            "patterns": [
-                "Rekomendasikan jam tangan untuk saya",
-                "Saya mencari jam tangan sport",
-                "Jam tangan apa yang lagi tren?",
-                "rekomendasi jam tangan"
-            ],
-            "responses": [
-                "Jam tangan analog klasik dari Brand V selalu menjadi pilihan yang elegan.",
-                "Jam tangan digital sport dari Brand W sangat fungsional dan modern.",
-                "Jam tangan smartwatch dari Brand X menawarkan berbagai fitur pintar untuk kehidupan sehari-hari Anda."
-            ]
-        },
-        {
-            "tag": "sepatu",
-            "patterns": [
-                "Rekomendasikan sepatu untuk saya",
-                "Saya mencari sepatu olahraga",
-                "Sepatu apa yang lagi tren?",
-                "rekomendasi sepatu"
-            ],
-            "responses": [
-                "Sepatu running dari Brand Y sangat nyaman untuk olahraga.",
-                "Sepatu casual dari Brand Z adalah pilihan yang bagus untuk tampilan sehari-hari.",
-                "Sepatu formal dari Brand AA sangat cocok untuk acara resmi.",
-                "Sepatu boots dari Brand AB bisa menjadi pilihan yang stylish untuk musim dingin."
+                {
+                    "text": "SIVALI Taylor Cargo Skirt - Rok Kargo Serut Wanita Pocket Long Skirt Maxi Panjang",
+                    "links": ["https://shopee.co.id/SIVALI-Taylor-Cargo-Skirt-Rok-Kargo-Serut-Wanita-Pocket-Long-Skirt-Maxi-Panjang-i.332848392.22176080865"]
+                },
+                {
+                    "text": "Rok Nuna Skirt Korean Style Bahan Cotton Twill Premium / Rok Panjang Wanita Muat BB Standart Dan Jumbo",
+                    "links": ["https://shopee.co.id/Rok-Nuna-Skirt-Korean-Style-Bahan-Cotton-Twill-Premium-Rok-Panjang-Wanita-Muat-BB-Standart-Dan-Jumbo-i.479051684.22675773497"]
+                },
+                {
+                    "text": "Cantiqu - Kenzy Cargo Skirt Rok Korean Style Katun Twill",
+                    "links": ["https://shopee.co.id/Cantiqu-Kenzy-Cargo-Skirt-Rok-Korean-Style-Katun-Twill-i.29461221.21191060192"]
+                }
             ]
         },
         {
             "tag": "kacamata",
             "patterns": [
                 "Rekomendasikan kacamata untuk saya",
-                "Saya mencari kacamata hitam",
-                "Kacamata apa yang lagi tren?"
+                "saya mencari kacamata hitam",
+                "Kacamata apa yang lagi tren?",
+                "rekomendasi kacamata"
             ],
             "responses": [
-                "Kacamata aviator dari Brand X adalah pilihan klasik yang tidak pernah ketinggalan zaman.",
-                "Kacamata cat eye dari Brand Y memberikan tampilan retro yang chic.",
-                "Kacamata bulat dari Brand Z sangat populer di kalangan generasi muda.",
-                "Kacamata persegi dari Brand AA adalah pilihan yang baik untuk tampilan profesional.",
-                "Kacamata hitam dari Brand AB memiliki perlindungan UV yang baik untuk melindungi mata Anda dari sinar matahari."
+                {
+                    "text": "GU Kacamata Anti Blue Light Anti Radiasi Blue Ray Gaya Korea 2022 Bentuk Bulat Bahan Metal untuk Pria dan Wanita",
+                    "links": ["https://shopee.co.id/GU-Kacamata-Anti-Blue-Light-Anti-Radiasi-Blue-Ray-Gaya-Korea-2022-Bentuk-Bulat-Bahan-Metal-untuk-Pria-dan-Wanita-i.99546019.12793038640"]
+                },
+                {
+                    "text": "Kacamata Anti Radiasi Lensa Square Replaceable Besar Frame Transparan Kacamata Pelindung UV400 Untuk Pria Dan Wanita",
+                    "links": ["https://shopee.co.id/Kacamata-Anti-Radiasi-Lensa-Square-Replaceable-Besar-Frame-Transparan-Kacamata-Pelindung-UV400-Untuk-Pria-Dan-Wanita-i.512897309.23569136869"]
+                },
+                {
+                    "text": "Kacamata Pria Wanita Oval bundar Lensa Transparan Gaya Korean KM42",
+                    "links": ["https://shopee.co.id/Kacamata-Pria-Wanita-Oval-bundar-Lensa-Transparan-Gaya-Korean-KM42-i.303321804.6750039175"]
+                }
+            ]
+        },
+        {
+            "tag": "sepatu",
+            "patterns": [
+                "Rekomendasikan sepatu untuk saya",
+                "saya mencari sepatu olahraga",
+                "Sepatu apa yang lagi tren?",
+                "rekomendasi sepatu"
+            ],
+            "responses": [
+                {
+                    "text": "Aerostreet 40-43 Riku Putih Biru Tua Merah - Sepatu Sneakers Sport 21HH31",
+                    "links": ["https://shopee.co.id/Aerostreet-40-43-Riku-Putih-Biru-Tua-Merah-Sepatu-Sneakers-Sport-21HH31-i.177400943.10641817617"]
+                },
+                {
+                    "text": "Sepatu Sneakers Wanita Sport Shoes Korea Tali Dewasa Fashion Kets Jalan Santai Casual Slip Resistant",
+                    "links": ["https://shopee.co.id/Sepatu-Sneakers-Wanita-Sport-Shoes-Korea-Tali-Dewasa-Fashion-Kets-Jalan-Santai-Casual-Slip-Resistant-Sole-Breathable-3.5cm-Tiggi-Khaki-Hitam-Ungu-ST003-i.833183429.19057424916"]
+                },
+                {
+                    "text": "ALOPE - Sepatu AKRA MOTIF BATIK Unisex Ukuran 39 sampai 43 Keren Kekinian",
+                    "links": ["https://shopee.co.id/ALOPE-Sepatu-AKRA-MOTIF-BATIK-Unisex-Ukuran-39-sampai-43-Keren-Kekinian-i.186643560.22676173696"]
+                }
+            ]
+        },
+        {
+            "tag": "sweater",
+            "patterns": [
+                "Rekomendasikan sweater untuk saya",
+                "saya mencari sweater hangat",
+                "Sweater apa yang lagi tren?",
+                "rekomendasi sweater"
+            ],
+            "responses": [
+                {
+                    "text": "OOTDSUPPLY Crewneck T-rex Cream | Sweater Pria & Wanita CN014",
+                    "links": ["https://shopee.co.id/OOTDSUPPLY-Crewneck-T-rex-Cream-Sweater-Pria-Wanita-CN014-i.165209823.17416318414"]
+                },
+                {
+                    "text": "Russ Sweater Hoodie Pria Oldskull Misty ( Up To Big Size )",
+                    "links": ["https://shopee.co.id/Russ-Sweater-Hoodie-Pria-Oldskull-Misty-(-Up-To-Big-Size-)-i.106751288.3251439064"]
+                },
+                {
+                    "text": "Sweater Crewneck Original SWCZ1 / Sweater Outfit Kekinian Bahan Premium Distro",
+                    "links": ["https://shopee.co.id/Sweater-Crewneck-Original-SWCZ1-Sweater-Outfit-Kekinian-Bahan-Premium-Distro-i.40493859.23977682969"]
+                }
             ]
         },
         {
             "tag": "bahasa yang didukung",
             "patterns": [
                 "dalam bahasa apa aplikasi ini tersedia?",
-                "pekain nyediain bahasa apa",
-                "pekain cuma pake bahasa indo",
-                "pekain bisa pke bahasa asing ga",
+                "nyediain bahasa apa",
+                "cuma pake bahasa indo",
+                "bisa pke bahasa asing ga",
                 "gabisa pake bahasa lain yah",
-                "pekain pake bahasa indo atau bukan",
+                "pake bahasa indo atau bukan",
                 "tersedia bahasa apa untuk aplikasi ini?",
                 "apakah aplikasi ini didukung bahasa asing?",
                 "bahasa yang digunakan dalam aplikasi ini apa?",
@@ -231,31 +309,31 @@
                 "selain bahasa indonesia apakah ada bahasa pendukung lainnya?"
             ],
             "responses": [
-                "Aplikasi ini hanya mendukung bahasa Indonesia.",
+                "aplikasi ini hanya mendukung bahasa Indonesia.",
                 "Bahasa yang didukung oleh aplikasi ini adalah bahasa Indonesia.",
-                "Aplikasi ini dirancang khusus untuk mendukung penggunaan bahasa Indonesia.",
+                "aplikasi ini dirancang khusus untuk mendukung penggunaan bahasa Indonesia.",
                 "Hanya bahasa Indonesia yang dapat digunakan dalam aplikasi ini.",
                 "Dalam aplikasi ini, hanya bahasa Indonesia yang tersedia sebagai pilihan bahasa.",
                 "Jika Anda ingin menggunakan aplikasi ini, Anda perlu menggunakan bahasa Indonesia.",
-                "Aplikasi ini hanya berfungsi dengan bahasa Indonesia.",
+                "aplikasi ini hanya berfungsi dengan bahasa Indonesia.",
                 "Bahasa yang dapat digunakan di aplikasi ini terbatas pada bahasa Indonesia.",
                 "Dalam konteks aplikasi ini, hanya bahasa Indonesia yang bisa digunakan.",
-                "Aplikasi ini didesain untuk penggunaan dalam bahasa Indonesia saja."
+                "aplikasi ini didesain untuk penggunaan dalam bahasa Indonesia saja."
             ]
         },
         {
             "tag": "ketersediaan platform",
             "patterns": [
-                "Apakah aplikasi ini tersedia di semua platform?",
+                "apakah aplikasi ini tersedia di semua platform?",
                 "Platform apa saja yang didukung oleh aplikasi ini?",
                 "Bisakah aplikasi ini dijalankan di Windows?",
-                "Apakah aplikasi ini kompatibel dengan iOS?",
-                "Apakah aplikasi ini tersedia untuk iOS?",
-                "Apakah aplikasi ini hanya bisa dijalankan di Android?",
+                "apakah aplikasi ini kompatibel dengan iOS?",
+                "apakah aplikasi ini tersedia untuk iOS?",
+                "apakah aplikasi ini hanya bisa dijalankan di Android?",
                 "Di platform mana saja aplikasi ini bisa digunakan?",
-                "Apakah aplikasi ini tersedia di Android?",
-                "Apakah aplikasi ini tersedia di Windows?",
-                "Apakah aplikasi ini kompatibel dengan semua platform?"
+                "apakah aplikasi ini tersedia di Android?",
+                "apakah aplikasi ini tersedia di Windows?",
+                "apakah aplikasi ini kompatibel dengan semua platform?"
             ],
             "responses": [
                 "Aplikasi kami tersedia untuk berbagai platform, termasuk Windows, iOS, dan Android."
@@ -264,14 +342,15 @@
         {
             "tag": "ugly aps",
             "patterns": [
-                "Aplikasinya tidak bagus.",
+                "aplikasinya tidak bagus.",
                 "Mengapa tampilan aplikasinya jelek?",
-                "Aplikasinya jelek.",
-                "Aplikasinya tidak memuaskan.",
-                "Aplikasinya berkualitas rendah.",
+                "aplikasinya jelek.",
+                "aplikasinya tidak memuaskan.",
+                "aplikasinya berkualitas rendah.",
                 "Mengapa aplikasinya tidak bagus?",
-                "Aplikasinya tidak cocok.",
-                "Aplikasinya sangat jelek."
+                "aplikasinya tidak cocok.",
+                "aplikasinya sangat jelek.",
+                "jelek"
             ],
             "responses": [
                 "Kami sangat menyesal jika aplikasi ini tidak memenuhi harapan Anda. Kami selalu berusaha untuk meningkatkan pengalaman pengguna dan menghargai umpan balik Anda.",
