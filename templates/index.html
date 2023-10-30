@@ -8,7 +8,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico">
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" >
 </head>
 <body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
@@ -19,18 +18,36 @@
               <!-- Logo and Title -->
               <a href="/" class="flex items-center text-white hover:text-gray-300">
                 <img src="static/img/logo.png" alt="Logo" class="w-10 h-10 mr-2">
-                <span class="text-3xl font-semibold">STYLEBOT</span>
+                <span class="text-2xl md:text-3xl font-semibold">STYLEBOT</span>
               </a>
               
+              <!-- Hamburger Menu for Mobile -->
+              <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button p-4 focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+                </button>
+              </div>
+          
               <!-- Navigation Links -->
-              <div class="space-x-4">
+              <div class="hidden md:flex space-x-4">
                 <a href="/" class="hover:text-gray-300">Home</a>
                 <a href="#fitur-section" class="scroll-link hover:text-gray-300">Fitur</a>
+                <a href="#fitur-deteksi" class="scroll-link hover:text-gray-300">Deteksi</a>
                 <a href="#about-section" class="scroll-link hover:text-gray-300">Tentang</a>
-                <a href="#fitur-deteksi" class="scroll-link inline-block px-6 py-3 bg-white text-black font-semibold rounded-md">Deteksi</a>
               </div>
             </nav>
+          </div>
+          
+          <!-- Mobile Menu -->
+          <div class="mobile-menu hidden md:hidden flex flex-col items-center">
+            <a href="/" class="block py-2 px-4 text-sm hover:bg-gray-700">Home</a>
+            <a href="#fitur-section" class="block py-2 px-4 text-sm hover:bg-gray-700">Fitur</a>
+            <a href="#fitur-deteksi" class="scroll-link block py-2 px-4 text-sm hover:bg-gray-700">Deteksi</a>
+            <a href="#about-section" class="block py-2 px-4 text-sm hover:bg-gray-700">Tentang</a>
         </div>
+  
 
         <!-- Main Content -->
         <div class="container mx-auto px-4 py-16">
@@ -130,29 +147,24 @@
                         <p>Universitas Dian Nuswantoro</p>
                     </div>
                     <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
-                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
-                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
-                        <p>Universitas Dian Nuswantoro</p>
+                        <img src="static/img/isabella.jpg" alt="Gambar Isabella" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Isabella</h3>
+                        <p>Universitas Nahdlatul Ulama Yogyakarta</p>
                     </div>
                     <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
-                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
-                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
-                        <p>Universitas Dian Nuswantoro</p>
+                        <img src="static/img/dwi.jpg" alt="Gambar Dwi Novianti" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Dwi Novianti</h3>
+                        <p>Universitas Negeri Semarang</p>
                     </div>
                     <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
-                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
-                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
-                        <p>Universitas Dian Nuswantoro</p>
+                        <img src="static/img/mahda.jpg" alt="Gambar Mahda Laina Arnumukti" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Mahda Laina Arnumukti</h3>
+                        <p>Institut Teknologi Telkom Purwokerto</p>
                     </div>
                     <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
-                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
-                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
-                        <p>Universitas Dian Nuswantoro</p>
-                    </div>
-                    <div class="team-member-card bg-white text-black rounded-lg p-4 shadow-lg">
-                        <img src="static/img/ahnafudin.jpg" alt="Gambar Ahnafudin" class="rounded-full mx-auto w-32 h-32 object-cover">
-                        <h3 class="mt-4 font-semibold">Ahnafudin Abdullah</h3>
-                        <p>Universitas Dian Nuswantoro</p>
+                        <img src="static/img/rifqy.jpg" alt="Gambar Ahmad Rifqy Alfiana" class="rounded-full mx-auto w-32 h-32 object-cover">
+                        <h3 class="mt-4 font-semibold">Ahmad Rifqy Alfiana</h3>
+                        <p>Universitas PGRI Semarang</p>
                     </div>
                 </div>
             </div>
@@ -160,16 +172,16 @@
 
         <!-- Footer -->
         <div class="container mx-auto px-4 py-4">
-            <div class="flex justify-between">
-                <div>&copy; 2023 StyleBot. All rights reserved.</div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-4 md:mb-0">&copy; 2023 StyleBot. All rights reserved.</div>
                 <div class="space-x-4">
-                    <a href="https://github.com/Ahnafudin/" target="_blank" class="hover:text-gray-300">
+                    <a href="https://github.com/Ahnafudin/stylebot" target="_blank" class="hover:text-gray-300">
                         <i class="fab fa-github fa-2x"></i>
                     </a>
                     <a href="https://www.youtube.com/@ahnafudinabdullah5340" target="_blank" class="hover:text-gray-300">
                         <i class="fab fa-youtube fa-2x"></i>
                     </a>
-                    <a href="https://roboflow.com/yourprofile" target="_blank" class="hover:text-gray-300">
+                    <a href="https://universe.roboflow.com/ahnafudin-abdullah-2rdln/fashion-stylebot" target="_blank" class="hover:text-gray-300">
                         <i class="fas fa-registered fa-2x"></i>
                     </a>
                 </div>
@@ -219,26 +231,34 @@
     <script src="static/chatbot.js" defer></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // CAMERA DETECTION
             const placeholder = document.getElementById("placeholder");
-            placeholder.style.display = "flex";
             const cameraPlaceholder = document.getElementById("camera-placeholder");
             const recommendationsPlaceholder = document.getElementById("recommendations-placeholder");
+            
+            placeholder.style.display = "flex";
             cameraPlaceholder.style.display = "flex";
             recommendationsPlaceholder.style.display = "none";
-        })
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          document.querySelectorAll('.scroll-link').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-              e.preventDefault();
-        
-              document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-              });
+            
+            // SMOOTH SCROLL
+            document.querySelectorAll('.scroll-link').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
             });
-          });
+    
+            // RESPONSIVE MOBILE VIEW
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
         });
-    </script>        
+    </script>    
 </body>
 </html>
