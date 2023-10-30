@@ -230,16 +230,16 @@
     <script src="static/main.js" defer></script>
     <script src="static/chatbot.js" defer></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // CAMERA DETECTION
-            const placeholder = document.getElementById("placeholder");
-            const cameraPlaceholder = document.getElementById("camera-placeholder");
-            const recommendationsPlaceholder = document.getElementById("recommendations-placeholder");
-            
-            placeholder.style.display = "flex";
-            cameraPlaceholder.style.display = "flex";
-            recommendationsPlaceholder.style.display = "none";
-            
+        document.addEventListener("DOMContentLoaded", function() {   
+            // RESPONSIVE MOBILE VIEW
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
             // SMOOTH SCROLL
             document.querySelectorAll('.scroll-link').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -249,14 +249,15 @@
                     });
                 });
             });
-    
-            // RESPONSIVE MOBILE VIEW
-            const mobileMenuButton = document.querySelector('.mobile-menu-button');
-            const mobileMenu = document.querySelector('.mobile-menu');
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
+
+            // CAMERA DETECTION
+            const recommendationsPlaceholder = document.getElementById("recommendations-placeholder");
+            const recommendationsContainer = document.getElementById("recommendations-container");
+                       
+            if (recommendationsContainer.children.length > 0) {
+                recommendationsPlaceholder.classList.add("hidden");
+            } else {
+                recommendationsPlaceholder.classList.remove("hidden");
             }
         });
     </script>    
