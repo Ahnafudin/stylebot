@@ -1,4 +1,4 @@
-# Bab III	StyleBot: Asisten AI dengan Deteksi Objek Fashion dan Interaksi Chatbot
+# StyleBot: Asisten AI dengan Deteksi Objek Fashion dan Interaksi Chatbot
 Project Akhir Magang dan Studi Independen Bersertifikat (MSIB) di Orbit Future Academy (OFA)
 
 Domain Computer Vision dan Natural Language Processing
