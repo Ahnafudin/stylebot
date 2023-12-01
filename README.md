@@ -7,3 +7,5 @@ Penjelasan aplikasi:
 - Menggunakan algoritma YOLOv8 untuk deteksi objek fashion.
 - Menggunakan algoritma Neural Network untuk interaksi chatbot.
 - Rekomendasi acak yang cepat.
+
+Video presentasi : https://youtu.be/wlC9cBUcP3E
