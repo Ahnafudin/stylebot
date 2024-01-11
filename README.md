@@ -10,4 +10,4 @@ Penjelasan aplikasi:
 - Menggunakan algoritma Neural Network untuk interaksi chatbot.
 - Rekomendasi acak yang cepat.
 
-Video presentasi : https://youtu.be/wlC9cBUcP3E
+Video presentasi : https://youtu.be/xNkKoz3VBZM
